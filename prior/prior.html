@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {background-color: #ccc4ff;}
+			.top {
+				background-color: #766db0;
+				color: black;
+				font-size: 130%;
+				margin: 20px;
+				padding: 10px;
+				text-align: center;
+			}
+			.back {
+				background-color: #766db0;
+				color: black;
+				font-size: 130%;
+				margin: 20px;
+				padding: 0.01px;
+			}
+			.art {
+				display:grid;
+				grid-template-columns:auto auto auto;
+				background-color:#766db0;
+				color:black;
+				font-size: 130%;
+				margin:20px;
+				padding:10px;
+				height:400px;
+				
+			}
+
+
+			
+		</style>
+
+
+		<title>Art Website</title>
+
+	</head>
+	<body>
+		<div class="top">
+			<h1>Previous Works</h1>
+		</div>
+		<a href="../index.html">
+			<div class="back">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Back</p>
+			</div>
+		</a>
+
+		<br><br>
+		
+		<div class="art">
+			<div>
+				<img id="test1" src="c8.jpg" alt="sry, site failed" style="width:300px;height:auto;">
+				
+				<script>
+					const imgs=["c1.jpg","c2.jpg","c3.jpg","c4.jpg","c5.jpg","c6.jpg","c7.jpg","c8.jpg"];
+					
+					const txt=["Summer 2025",
+						"Spring 2025",
+						"Fall 2024",
+						"Spring 2024",
+						"Winter 2023-24",
+						"Fall 2023",
+						"Fall 2025",
+						"Fall 2025"];
+					const txxt=["This one is special. After my neighbor's dog died, I helped him bury her and spent the following two months drawing a picture of her and his other dog for him. This is the result; He has the physical version.",
+						"",
+						"A christmas gift to my Grandma, this picture was the 2nd longest(the dog for my neighbor was first) I've spent on a piece of art made with the sole intent of giving to someone as a gift.",
+						"",
+						"This one was drawn entirely during 9th grade Honors Bio.",
+						"Also drawn entirely during Bio.",
+						"",
+						""];
+					let norepeats=0;
+					let store=0;
+					setInterval(() =>{
+						var temp = store;
+										
+						document.getElementById("test1").src=imgs[temp];
+						document.getElementById("bbbb").textContent = txt[temp];
+						document.getElementById("bbb").textContent = txxt[temp];
+						store=temp+1;
+						if(store==imgs.length){
+							store=0;
+						}
+						sleep(1000);
+					}, 2000);
+				</script>
+			</div>
+			<div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+			<div id="deee">
+				<p id="bbbb">Summer 2026</p>
+				<p>I used to be a colored pencil artist. Prior to fall 2025, I hadn't experiemtned with paint as a medium. In honor of that, I put some of my best colored pencil works here.
+				<p id="bbb"></p>
+			</div>
+			
+		</div>
+
+		<div class="art">
+			<div>
+				<img id="test2" src="p6.jpg" alt="sry, site failed" style="width:300px;height:auto;">
+				
+				<script>
+					const imgs2=["p1.jpg","p2.jpg","p3.jpg","p4.jpg","p5.jpg","p6.jpg","p7.jpg"];
+					
+					const txt2=["Mt. Egg",
+						"To Be Me",
+						"Untitled",
+						"Untitled",
+						"Untitled",
+						"Untitled",
+						"Untitled"];
+					const txt3=["",
+						"",
+						"",
+						"",
+						"",
+						"",
+						""];
+					let norepeats2=0;
+					let store2=3;
+					setInterval(() =>{
+						var temp2 = store2;
+										
+						document.getElementById("test2").src=imgs2[temp2];
+						//document.getElementById("aaa").textContent = txt2[temp2];
+						store2=temp2+1;
+						if(store2==imgs2.length){
+							store2=0;
+						}
+						sleep(1000);
+					}, 2000);
+				</script>
+			</div>
+			<div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></div>
+			
+			<div id="dee2">
+				<p style="font-size:150%;margin:0px;" id="aaa"></p>
+				<p>Around a month into the school year fall of 2025, I swore off pencil as a medium. Tired of the monotony of shading gradients over large expanses of paper, I made the switch to acrylic paint. While most works made during the transitionary phase aren't particularily good, I wanted to put a section here showing the pieces I made as I learned to paint instead of draw. </p>
+				<p id="aaaa"></p>
+				
+			</div>
+			
+		</div>
+
+				
+			
+	</body>
+</html>
