@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {background-color: #ccc4ff;}
+			.top {
+				background-color: #766db0;
+				color: black;
+				font-size: 130%;
+				margin: 20px;
+				padding: 10px;
+				text-align: center;
+			}
+			.back {
+				background-color: #766db0;
+				color: black;
+				font-size: 130%;
+				margin: 20px;
+				padding: 0.01px;
+			}
+			.art {
+				display:grid;
+				grid-template-columns:auto 1fr;
+				background-color:#766db0;
+				color:black;
+				font-size: 130%;
+				margin:20px;
+				padding:10px;
+				height:400px;
+				gap:20px;
+				
+			}
+
+
+			
+		</style>
+
+
+		<title>Art Website</title>
+
+	</head>
+	<body>
+		<div class="top">
+			<h1>Sewing</h1>
+		</div>
+		<a href="../index.html">
+			<div class="back">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Back</p>
+			</div>
+		</a>
+
+		<br><br>
+		
+		<div class="art">
+			<div>
+				<img id="test1" src="a14.jpg" alt="sry, site failed" style="width:300px;height:auto;">
+				
+				<script>
+					const imgs=["a1.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","a6.jpg","a7.jpg","a8.jpg","a9.jpg","a10.jpg","a11.jpg","a12.jpg","a13.jpg","a14.jpg","a15.jpg"];
+					
+					const txt=["aaaaaaaaaa",
+						"bbbbbbbbbb",
+						"cccccccccc",
+						"dddddddddd",
+						"eeeeeeeeee"];
+					let norepeats=0;
+					let store=0;
+					setInterval(() =>{
+						var temp = store;
+										
+						document.getElementById("test1").src=imgs[temp];
+						//document.getElementById("deee").textContent = txt[temp];
+						store=temp+1;
+						if(store==imgs.length){
+							store=0;
+						}
+						sleep(1000);
+					}, 2000);
+				</script>
+			</div>
+			
+			<div id="deee">
+				<p>I bought a sewing machine for this.</p>
+			</div>
+			
+		</div>
+
+		<div class="art">
+			<div>
+				<img id="test2" src="b1.jpg" alt="sry, site failed" style="width:300px;height:auto;">
+				
+				<!--<script>
+					const imgs2=["p1.jpg","p2.jpg","p3.jpg","p4.jpg","p5.jpg","p6.jpg"];
+					
+					const txt2=["aaaaaaaaaa",
+						"bbbbbbbbbb",
+						"cccccccccc",
+						"dddddddddd",
+						"eeeeeeeeee"];
+					let norepeats2=0;
+					let store2=3;
+					setInterval(() =>{
+						var temp2 = store2;
+										
+						document.getElementById("test2").src=imgs2[temp2];
+						//document.getElementById("dee2").textContent = txt2[temp2];
+						store2=temp2+1;
+						if(store2==imgs2.length){
+							store2=0;
+						}
+						sleep(1000);
+					}, 2000);
+				</script>-->
+			</div>
+			
+			<div id="dee2">
+				<p>Hatsune Miku cosplay for halloween 2025. At the time I did not have my own sewing machine, and my Mom would not let me use hers at 3 in the morning. Because of that I hand-sewed the entire outfit.</p>
+			</div>
+			
+		</div>
+
+				
+			
+	</body>
+</html>
